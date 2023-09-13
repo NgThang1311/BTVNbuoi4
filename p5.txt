@@ -1,0 +1,35 @@
+//Ý 1:
+import 'dart:math';
+
+void main(List<String> args) {
+  int randomInt = Random().nextInt(100);
+  switch (randomInt % 2) {
+    case 0:
+      print("$randomInt là số chẵn");
+      break;
+    case 1:
+      print("$randomInt là số lẻ");
+      break;
+    default:
+      print("Default case");
+      break;
+  }
+//Ý 2:
+    for (int i = 1; i < 101; i = i + 2) 
+    print("$i");
+    
+//Ý 3:
+    for (int i1 = 0; i1 < 101; i1 = i1 +2)
+    print("$i1");
+
+//Ý 4:
+int i2 =0;
+ if  (i2 == 0) {
+    print("0 là số chẵn.");
+  } else if (i2 % 2 == 0) {
+    print("$i2 là số chẵn.");
+  } else {
+    print("$i2 là số lẻ.");
+  }
+
+}
