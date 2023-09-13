@@ -1,0 +1,36 @@
+void main(List<String> args) {
+  
+  SoNguyenTo(68);
+}
+
+void SoNguyenTo(int n) {
+  List<int> arr = <int>[];
+  for (int i = 0; i <= n; i++) {
+    if (kiemTra(i)) {
+      arr.add(i);
+    }
+  }
+
+  print('Kết quả các số nguyên tố là:\n$arr');
+}
+
+bool kiemTra(int so) {
+  if (so <= 1) {
+    
+    return false;
+  } else if (so == 2) 
+  {
+    return true;
+  } else if (so % 2 == 0) 
+  {
+    return false;
+  } else {
+    for (int i = 2; i <= so ~/ 2; i++) 
+    {
+      if (so % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
