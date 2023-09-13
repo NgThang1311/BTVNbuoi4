@@ -1,0 +1,38 @@
+void main(List<String> args) {
+   int a = 10;
+ print("add method: ${a.add(2)}"); 
+ print("subtract method: ${a.subtract(2)}"); 
+ print("divide method: ${a.divide(2)}"); 
+ print("multiple method: ${a.multiple(2)}");
+
+}
+extension NumberExtensions on int {
+  int add(int other) {
+    if (other <= 0) {
+      throw Exception("Số phải lớn hơn 0");
+    }
+    return this + other;
+  }
+
+  int subtract(int other) {
+    if (other <= 0) {
+      throw Exception("Số phải lớn hơn 0");
+    }
+    return this - other;
+  }
+
+  double divide(int other) {
+    if (other <= 0) {
+      throw Exception("Số phải lớn hơn 0");
+    }
+    return this / other;
+  }
+
+  int multiple(int other) {
+    if (other <= 0) {
+      throw Exception("Số phải lớn hơn 0");
+    }
+    return this * other;
+  }
+}
+
